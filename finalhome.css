@@ -45,103 +45,75 @@
 
 
 /* Gallery Code */
-.slideshow-container {
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
-    margin-top: 2%;
-    border: 3px solid #070101;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+ /* Carousel Styling */
+ .carousel-item {
+    transition: transform 2s ease, opacity .5s ease-out;
+}
+
+/* Enhancing the visibility of navigation controls */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: black; /* More visible */
+    border-radius: 50%; /* Circular background */
+    padding: 10px; /* Spacing inside the circle */
+}
+
+/* Active indicator styling */
+.carousel-indicators [data-bs-target] {
+    background-color: #333; /* Darker for better visibility */
+    width: 12px; /* Larger touch area */
+    height: 12px; /* Perfect circle */
+    border-radius: 50%; /* Circular shape */
+}
+
+.carousel-indicators .active {
+    background-color: #fff; /* White when active */
+}
+
+/* Hover effects on controls */
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    filter: brightness(120%); /* Slightly lighter on hover */
+}
+
+/* Adding shadows for depth */
+.carousel-inner .carousel-item img {
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5); /* Soft shadow for depth */
 }
 
 
-.mySlides {
-    display: none;
-}
 
-
-.fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-
-@keyframes fade {
-    from {
-        opacity: .4
-    }
-
-    to {
-        opacity: 1
-    }
-}
-
-
-.dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
+body {
+    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+  }
+  .card-custom {
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 40px; /* Increased padding */
+    margin-bottom: 20px;
+    text-align: center; /* Center text */
+  }
+  .card-custom h5 {
+    color: #333;
+    margin-bottom: 25px;
+  }
+  .card-custom ul {
+    padding-left: 0;
+    list-style: none;
+    text-align: left; /* Align list text to left */
+  }
+  .card-custom li:before {
+    content: '•';
+    color: #6c757d;
+    font-weight: bold;
     display: inline-block;
-    transition: background-color 0.6s ease;
-}
-
-.active,
-.dot:hover {
-    background-color: #717171;
-}
-
-
-
-.container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-    margin: 20px;
+    width: 1em;
+    margin-left: -1em;
   }
-  .button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: black;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-    border: none;
-    transition: background-color 0.3s ease;
-    margin-top: 10%;
-  }
-  
-  .button:hover {
-    background-color: #333; /* Darken the button a bit when hovering */
-  }
-  
-
-  .card {
-    border: 1px solid #000;
-    padding: 20px;
-    text-align: center;
-  }
-  .card h2 {
-    margin-bottom: 15px;
-  }
-  .card button {
-    margin-top: 15px;
-    padding: 10px;
-    background-color: black;
-    color: white;
-    border: none;
-    cursor: pointer;
-  }
-  .card img {
-    width: 100%;
-    height: auto;
-  }
-  .card .placeholder {
-    background-color: #ccc;
-    width: 100%;
-    height: 150px;
+  .card-image {
+    margin-bottom: 25px;
   }
 
 
@@ -168,24 +140,27 @@
 
 /*Footer*/ 
 
-footer {
-    background-color: #343a40; /* A dark background for the footer */
-  }
-  
-  footer h5 {
-    margin-bottom: 20px; /* Space under the site name */
-  }
-  
-  footer .nav-link {
-    color: rgba(255, 255, 255, 0.5);
-    transition: color 0.2s;
-  }
-  
-  footer .nav-link:hover {
-    color: #ffffff; /* Brighter text on hover */
-  }
-  
-  footer .fa {
-    font-size: 1.5em; /* Larger icons for social media links */
-  }
+.footer {
+    background-color: #343a40; 
+    color:black; 
+    width: 100%;
+}
+.footer .nav-link {
+    color:black; 
+}
+.footer .nav-link:hover {
+    color: #000; 
+    text-decoration: none; 
+}
+.footer .btn-link {
+    color: black; 
+}
+.footer .btn-link:hover {
+    color: black; 
+    background-color: transparent; 
+}
+.footer h5 {
+    border-bottom: 1px solid #555; 
+    padding-bottom: 10px; 
+}
   
