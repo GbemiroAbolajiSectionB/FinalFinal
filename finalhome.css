@@ -1,0 +1,166 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.blue-navbar {
+    background-color: #007BFF;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    padding: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #BBD2FF;
+}
+
+.brand {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+
+/* Gallery Code */
+ /* Carousel Styling */
+ .carousel-item {
+    transition: transform 2s ease, opacity .5s ease-out;
+}
+
+/* Enhancing the visibility of navigation controls */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: black; /* More visible */
+    border-radius: 50%; /* Circular background */
+    padding: 10px; /* Spacing inside the circle */
+}
+
+/* Active indicator styling */
+.carousel-indicators [data-bs-target] {
+    background-color: #333; /* Darker for better visibility */
+    width: 12px; /* Larger touch area */
+    height: 12px; /* Perfect circle */
+    border-radius: 50%; /* Circular shape */
+}
+
+.carousel-indicators .active {
+    background-color: #fff; /* White when active */
+}
+
+/* Hover effects on controls */
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    filter: brightness(120%); /* Slightly lighter on hover */
+}
+
+/* Adding shadows for depth */
+.carousel-inner .carousel-item img {
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5); /* Soft shadow for depth */
+}
+
+
+
+body {
+    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+  }
+  .card-custom {
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 40px; /* Increased padding */
+    margin-bottom: 20px;
+    text-align: center; /* Center text */
+  }
+  .card-custom h5 {
+    color: #333;
+    margin-bottom: 25px;
+  }
+  .card-custom ul {
+    padding-left: 0;
+    list-style: none;
+    text-align: left; /* Align list text to left */
+  }
+  .card-custom li:before {
+    content: '•';
+    color: #6c757d;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+  .card-image {
+    margin-bottom: 25px;
+  }
+
+
+  .coin {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+  }
+  
+  .coin-name {
+    font-weight: bold;
+  }
+  
+  .coin-symbol {
+    font-style: italic;
+  }
+  
+  .coin-price {
+    color: green;
+  }
+  
+
+
+
+/*Footer*/ 
+
+.footer {
+    background-color: #343a40; 
+    color:black; 
+    width: 100%;
+}
+.footer .nav-link {
+    color:black; 
+}
+.footer .nav-link:hover {
+    color: #000; 
+    text-decoration: none; 
+}
+.footer .btn-link {
+    color: black; 
+}
+.footer .btn-link:hover {
+    color: black; 
+    background-color: transparent; 
+}
+.footer h5 {
+    border-bottom: 1px solid #555; 
+    padding-bottom: 10px; 
+}
+  

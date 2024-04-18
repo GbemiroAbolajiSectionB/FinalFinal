@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.blue-navbar {
+    background-color: #007BFF;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    padding: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #BBD2FF;
+}
+
+.brand {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/*API */
+
+
+body {
+    padding-top: 20px;
+    background-color: #f4f4f9;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    color: #333;
+    font-size: 1.2rem;
+}
+
+.card-text {
+    color: #666;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    transition: transform 0.3s ease-in-out;
+}
+
+h1 {
+    text-align: center;
+    color: #444;
+}
+
+@media (max-width: 768px) {
+    .card-body {
+        padding: 15px;
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
+}
+
+/* Bottom Three Cards */
+
+
+.pricing-card {
+    border: 1px solid #e1e1e1;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px 0;
+}
+
+.pricing-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.benefit-list {
+    list-style: none;
+    padding: 0;
+}
+
+.benefit-list li {
+    margin-bottom: 10px;
+}
+
+.benefit-list li::before {
+    content: '✓';
+    margin-right: 5px;
+    color: green;
+}
+
+.assets-required {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Footer*/ 
+
+footer {
+    background-color: #343a40; /* A dark background for the footer */
+  }
+  
+  footer h5 {
+    margin-bottom: 20px; /* Space under the site name */
+  }
+  
+  footer .nav-link {
+    color: rgba(255, 255, 255, 0.5);
+    transition: color 0.2s;
+  }
+  
+  footer .nav-link:hover {
+    color: #ffffff; /* Brighter text on hover */
+  }
+  
+  footer .fa {
+    font-size: 1.5em; /* Larger icons for social media links */
+  }
+  
+  
